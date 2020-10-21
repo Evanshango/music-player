@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "290163401893",
+    "firebase_url": "https://play-now-af408.firebaseio.com",
+    "project_id": "play-now-af408",
+    "storage_bucket": "play-now-af408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290163401893:android:713d4cc0f991031c2cd94c",
+        "android_client_info": {
+          "package_name": "com.evans.playnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290163401893-gbuaf3rcu882ikjt2nfp2e5294t8ecth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evans.playnow",
+            "certificate_hash": "37175ff1442fc6c06deb64c4ac345819952d797c"
+          }
+        },
+        {
+          "client_id": "290163401893-86e5rjt3q21a09ov7j3b8l9msv870m6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXRIoeaGUnxX0T4vE7NZn21f0oondJ8kE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290163401893-86e5rjt3q21a09ov7j3b8l9msv870m6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
