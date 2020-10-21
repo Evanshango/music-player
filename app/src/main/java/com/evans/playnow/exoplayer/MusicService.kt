@@ -12,6 +12,7 @@ import com.evans.playnow.exoplayer.callbacks.MusicPlaybackPreparer
 import com.evans.playnow.exoplayer.callbacks.MusicPlayerEventListener
 import com.evans.playnow.exoplayer.callbacks.MusicPlayerNotificationListener
 import com.evans.playnow.helpers.Constants.MEDIA_ROOT_ID
+import com.evans.playnow.helpers.Constants.NETWORK_ERROR
 import com.evans.playnow.helpers.Constants.SERVICE_TAG
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
@@ -126,6 +127,7 @@ class MusicService : MediaBrowserServiceCompat() {
                             isPlayerInitialized = true
                         }
                     } else {
+                        mediaSession.sendSessionEvent(NETWORK_ERROR, null)
                         result.sendResult(null)
                     }
                 }
