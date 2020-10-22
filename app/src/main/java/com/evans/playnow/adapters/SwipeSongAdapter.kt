@@ -3,25 +3,20 @@ package com.evans.playnow.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
-import com.bumptech.glide.RequestManager
-import com.evans.playnow.databinding.ItemSongBinding
-import javax.inject.Inject
+import com.evans.playnow.databinding.ItemSwipeSongBinding
 
-class SongAdapter @Inject constructor(
-    private val glide: RequestManager
-) : BaseSongAdapter<ItemSongBinding>() {
+class SwipeSongAdapter : BaseSongAdapter<ItemSwipeSongBinding>() {
 
     override val differ = AsyncListDiffer(this, diffCallback)
 
     override fun getAdapterBinding(inflater: LayoutInflater, container: ViewGroup) =
-        ItemSongBinding.inflate(inflater, container, false)
+        ItemSwipeSongBinding.inflate(inflater, container, false)
 
     override fun onBindViewHolder(holder: SongHolder, position: Int) {
         val song = songs[position]
         binding.apply {
-            txtSongTitle.text = song.title
-            txtSongSubtitle.text = song.subtitle
-            glide.load(song.imgUrl).into(songImg)
+            val text = "${song.title} - ${song.subtitle}"
+            txtSongTitle.text = text
 
             root.setOnClickListener {
                 onItemClickListener?.let { click ->
