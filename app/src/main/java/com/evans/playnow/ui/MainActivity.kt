@@ -1,8 +1,9 @@
-package com.evans.playnow
+package com.evans.playnow.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.RequestManager
+import com.evans.playnow.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
